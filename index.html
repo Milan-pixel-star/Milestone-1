@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Pink Courtyard</title>
+  </head>
+
+  <body>
+    <nav class="bg-[#30231F] p-4 relative">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-xl md:text-2xl font-semibold">
+          Pink Courtyard
+        </a>
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="text-white md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="menu"
+          class="hidden absolute top-full left-0 w-full bg-[#30231F] flex-col items-center gap-5 p-5 z-50 md:static md:flex md:flex-row md:w-auto md:p-0 md:gap-6"
+        >
+          <a href="/index.html" class="text-white hover:text-pink-300">Home</a>
+          <a href="/Service.html" class="text-white hover:text-pink-300">Service/Menu</a>
+          <a href="/Gallery.html" class="text-white hover:text-pink-300">Gallery</a>
+          <a href="/contactus.html" class="text-white hover:text-pink-300">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-[#F5EBDD] px-5 py-12 md:py-20">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center"
+      >
+        <div class="flex flex-col justify-center text-center md:text-left">
+          <h1
+            class="text-[#30231F] text-3xl sm:text-4xl md:text-5xl font-semibold mb-5 leading-tight"
+          >
+            Good Food. Great Coffee. <br />
+            Beautiful Moments.
+          </h1>
+
+          <p class="text-[#30231F] text-base md:text-lg leading-relaxed mb-6">
+            Discover your new favourite corner in Jaipur. From freshly brewed
+            coffee and handcrafted desserts to delicious meals, Pink Courtyard
+            Café is the perfect place to relax, connect, and create memories.
+          </p>
+
+          <button
+            class="w-full sm:w-44 mx-auto md:mx-0 bg-[#30231F] hover:bg-[#E8C9B8] text-white hover:text-[#30231F] text-base font-bold py-3 px-5 rounded transition duration-300"
+          >
+            See Our Menu &gt;
+          </button>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+          <img
+            src="/assets/Pink Courtyard Café at Dusk2.png"
+            alt="Pink Courtyard Café at Dusk"
+            class="w-full max-w-lg h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 md:py-20">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 items-center">
+        <div class="flex flex-col justify-center text-center md:text-left">
+          <h2
+            class="text-[#30231F] text-3xl sm:text-4xl md:text-5xl font-semibold mb-6"
+          >
+            About Us
+          </h2>
+
+          <p class="text-[#30231F] text-base md:text-lg leading-relaxed mb-5">
+            At Pink Courtyard Café, we believe every great day deserves great
+            food and coffee. Inspired by Jaipur's vibrant culture and welcoming
+            spirit, we bring together delicious flavours, freshly brewed coffee,
+            and a beautiful ambience.
+          </p>
+
+          <p class="text-[#30231F] text-base md:text-lg leading-relaxed mb-6">
+            Whether you're catching up with friends, enjoying a family meal, or
+            simply taking a coffee break, Pink Courtyard is your perfect place
+            to relax and create memories.
+          </p>
+
+          <button
+            class="w-full sm:w-60 mx-auto md:mx-0 bg-[#30231F] hover:bg-[#A77B55] text-white text-base font-bold py-3 px-5 rounded transition duration-300"
+          >
+            Let's discess - Book Now 
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 w-fit px-40">
+            <img class="w-[200px] h-[200px] object-cover rounded-lg" src="/assets/cake.png">
+            <img class="w-[200px] h-[200px] object-cover rounded-lg" src="/assets/image copy.png">
+            <img class="w-[200px] h-[200px] object-cover rounded-lg" src="/assets/image.png">
+            <img class="w-[200px] h-[200px] object-cover rounded-lg" src="/assets/image3.png">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F5EBDD]  px-5 py-12 md:py-16">
+      
+      <h2
+        class="text-[#30231F] text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 text-center"
+      >
+        Our Highlights
+      </h2>
+
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pt-15"
+      >
+        <div
+          class="border border-[#A77B55] bg-[#A77B55] hover:bg-[#29231F] rounded-xl p-6 transition duration-300"
+        >
+          <h3
+            class="text-white font-semibold text-lg md:text-xl text-center mb-3"
+          >
+            Freshly Brewed Coffee
+          </h3>
+          <p
+            class="text-white text-sm md:text-base text-center leading-relaxed"
+          >
+            Experience the perfect blend of aroma and taste with our freshly
+            brewed coffee.Experience the perfect blend of aroma and taste with our freshly
+            brewed coffee.
+          </p>
+        </div>
+
+        <div
+          class="border border-[#A77B55] bg-[#A77B55] hover:bg-[#29231F] rounded-xl p-6 transition duration-300"
+        >
+          <h3
+            class="text-white font-semibold text-lg md:text-xl text-center mb-3"
+          >
+            Delicious Food
+          </h3>
+          <p
+            class="text-white text-sm md:text-base text-center leading-relaxed"
+          >
+            Indulge in a variety of delicious dishes crafted with the finest
+            ingredients.Indulge in a variety of delicious dishes crafted with the finest
+            ingredients.
+          </p>
+        </div>
+
+        <div
+          class="border border-[#A77B55] bg-[#A77B55] hover:bg-[#29231F] rounded-xl p-6 transition duration-300"
+        >
+          <h3
+            class="text-white font-semibold text-lg md:text-xl text-center mb-3"
+          >
+            Beautiful Ambience
+          </h3>
+          <p
+            class="text-white text-sm md:text-base text-center leading-relaxed"
+          >
+            Relax and unwind in our beautifully designed café, perfect for any
+            occasion.Relax and unwind in our beautifully designed café, perfect for any
+            occasion.
+          </p>
+        </div>
+
+        <div
+          class="border border-[#A77B55] bg-[#A77B55] hover:bg-[#29231F] rounded-xl p-6 transition duration-300"
+        >
+          <h3
+            class="text-white font-semibold text-lg md:text-xl text-center mb-3"
+          >
+            Friendly Service
+          </h3>
+          <p
+            class="text-white text-sm md:text-base text-center leading-relaxed"
+          >
+            Our staff is dedicated to providing you with a warm and welcoming
+            experience. Our staff is dedicated to providing you with a warm and welcoming
+            experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <h3 class="text-[#30231F] text-3xl sm:text-4xl md:text-4xl font-semibold mb-10 text-center pt-15">Custome Testimonials</h3>
+      <div class="grid grid-cols-3 px-40 pb-30 gap-10">
+        <div class="bg-white text-center p-10 border border-1 rounded-xl shadow-lg shadow-[#D9A58A]-500/50">
+          <img class="w-20 h-auto mx-auto object-contain" src="/assets/customer.png">
+          <h4 class="text-black font-semibold text-lg md:text-xl text-center mb-3 pt-5">Milan</h4>
+          <p>
+            "Beautiful ambience, delicious food, and amazing coffee. Definitely one of my favourite café experiences!"
+          </p>
+        </div>
+        <div class="bg-white text-center p-10 border border-1 rounded-xl shadow-lg shadow-[#D9A58A]-500/50">
+          <img class="w-20 h-auto mx-auto object-contain" src="/assets/customer.png">
+          <h4 class="text-black font-semibold text-lg md:text-xl text-center mb-3 pt-5">Milan</h4>
+          <p>
+            "Beautiful ambience, delicious food, and amazing coffee. Definitely one of my favourite café experiences!"
+          </p>
+        </div>
+        <div class="bg-white text-center p-10 border border-1 rounded-xl shadow-lg shadow-[#D9A58A]-500/50">
+          <img class="w-20 h-auto mx-auto object-contain" src="/assets/customer.png">
+          <h4 class="text-black font-semibold text-lg md:text-xl text-center mb-3 pt-5">Milan</h4>
+          <p>
+            "Beautiful ambience, delicious food, and amazing coffee. Definitely one of my favourite café experiences!"
+          </p>
+        </div>
+      </div>
+    </section>
+    
+<footer class="bg-[#30231F] text-white">
+
+    <div class="container mx-auto px-6 md:px-20 py-12">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+            <div>
+                <a href="#" class="text-2xl md:text-4xl font-semibold">
+                    Pink Courtyard
+                </a>
+
+                <p class="text-[#E8C9B8] mt-4 text-sm md:text-base leading-relaxed max-w-xs">
+                    Good Food. Great Coffee. Beautiful Moments.
+                    Visit us and enjoy a wonderful café experience.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+
+                <a href="/index.html" class="text-[#E8C9B8] hover:text-white transition">Home</a>
+                <a href="/Service.html" class="text-[#E8C9B8] hover:text-white transition">Service/Menu</a>
+                <a href="/Gallery.html" class="text-[#E8C9B8] hover:text-white transition">Gallery</a>
+                <a href="/contactus.html" class="text-[#E8C9B8] hover:text-white transition">Contact</a>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+
+                <p class="text-[#E8C9B8]">Jaipur, Rajasthan</p>
+                <a href="tel:+919876543210" class="text-[#E8C9B8] hover:text-white">
+                    +91 98765 43210
+                </a>
+                <a href="mailto:info@pinkcourtyard.com" class="text-[#E8C9B8] hover:text-white">
+                    info@pinkcourtyard.com
+                </a>
+            </div>
+
+        </div>
+
+        <div class="border-t border-[#A77B55] mt-10 pt-6 text-center">
+            <p class="text-sm text-[#E8C9B8]">
+                © 2026 Pink Courtyard. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+  </body>
+</html>
