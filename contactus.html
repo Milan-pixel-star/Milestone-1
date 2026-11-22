@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact Us | Pink Courtyard</title>
+  </head>
+
+  <body class="bg-[#F5EBDD]">
+    <nav class="bg-[#30231F] p-4 relative">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-xl md:text-2xl font-semibold">
+          Pink Courtyard
+        </a>
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="text-white md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="menu"
+          class="hidden absolute top-full left-0 w-full bg-[#30231F] flex-col items-center gap-5 p-5 z-50 md:static md:flex md:flex-row md:w-auto md:p-0 md:gap-6"
+        >
+          <a href="/index.html" class="text-white hover:text-pink-300">Home</a>
+          <a href="/Service.html" class="text-white hover:text-pink-300"
+            >Service/Menu</a
+          >
+          <a href="/Gallery.html" class="text-white hover:text-pink-300"
+            >Gallery</a
+          >
+          <a href="/contactus.html" class="text-white hover:text-pink-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="bg-[#A77B55] text-white px-5 py-16 md:py-24 text-center">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-[#D9A58A] uppercase tracking-[4px] text-sm mb-4">
+          We'd Love to Hear From You
+        </p>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-5">
+          Contact Us
+        </h1>
+
+        <p class="text-[#E8C9B8] text-base sm:text-lg leading-relaxed">
+          Have a question, planning a visit, or looking to celebrate a special
+          moment? Get in touch with us. We'd be happy to help.
+        </p>
+      </div>
+    </section>
+
+    <section class="px-5 sm:px-8 md:px-16 py-12 md:py-20">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md">
+          <h2 class="text-[#30231F] text-2xl md:text-3xl font-bold mb-3">
+            Send Us a Message
+          </h2>
+
+          <p class="text-gray-600 mb-8">
+            Fill out the form below and we'll get back to you.
+          </p>
+
+          <form action="#" method="POST" class="space-y-5">
+            <div>
+              <label for="name" class="block text-[#30231F] font-semibold mb-2">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                class="w-full p-3 rounded-lg border border-[#D9A58A] bg-white focus:outline-none focus:ring-2 focus:ring-[#A77B55]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-[#30231F] font-semibold mb-2"
+              >
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                class="w-full p-3 rounded-lg border border-[#D9A58A] bg-white focus:outline-none focus:ring-2 focus:ring-[#A77B55]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="phone"
+                class="block text-[#30231F] font-semibold mb-2"
+              >
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+                class="w-full p-3 rounded-lg border border-[#D9A58A] bg-white focus:outline-none focus:ring-2 focus:ring-[#A77B55]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="subject"
+                class="block text-[#30231F] font-semibold mb-2"
+              >
+                Subject
+              </label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter subject"
+                required
+                class="w-full p-3 rounded-lg border border-[#D9A58A] bg-white focus:outline-none focus:ring-2 focus:ring-[#A77B55]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block text-[#30231F] font-semibold mb-2"
+              >
+                Your Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+                class="w-full p-3 rounded-lg border border-[#D9A58A] bg-white focus:outline-none focus:ring-2 focus:ring-[#A77B55] resize-y"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#30231F] text-white font-bold py-3 px-5 rounded-lg hover:bg-[#A77B55] transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="px-5 sm:px-8 md:px-16 pb-12 md:pb-20">
+      <div class="max-w-screen-xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl text-[#30231F] font-bold text-center mb-3"
+        >
+          Find Us Here
+        </h2>
+
+        <p class="text-gray-600 text-center mb-8">
+          We look forward to welcoming you to Pink Courtyard.
+        </p>
+
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <iframe
+            src="https://www.google.com/maps?q=Jaipur,Rajasthan,India&output=embed"
+            width="100%"
+            height="400"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing Jaipur, Rajasthan"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#30231F] text-white">
+      <div class="container mx-auto px-6 md:px-20 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div>
+            <a href="#" class="text-2xl md:text-4xl font-semibold">
+              Pink Courtyard
+            </a>
+
+            <p
+              class="text-[#E8C9B8] mt-4 text-sm md:text-base leading-relaxed max-w-xs"
+            >
+              Good Food. Great Coffee. Beautiful Moments. Visit us and enjoy a
+              wonderful café experience.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+
+            <a
+              href="/index.html"
+              class="text-[#E8C9B8] hover:text-white transition"
+              >Home</a
+            >
+            <a
+              href="/Service.html"
+              class="text-[#E8C9B8] hover:text-white transition"
+              >Service/Menu</a
+            >
+            <a
+              href="/Gallery.html"
+              class="text-[#E8C9B8] hover:text-white transition"
+              >Gallery</a
+            >
+            <a
+              href="/contactus.html"
+              class="text-[#E8C9B8] hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+
+            <p class="text-[#E8C9B8]">Jaipur, Rajasthan</p>
+            <a href="tel:+919876543210" class="text-[#E8C9B8] hover:text-white">
+              +91 98765 43210
+            </a>
+            <a
+              href="mailto:info@pinkcourtyard.com"
+              class="text-[#E8C9B8] hover:text-white"
+            >
+              info@pinkcourtyard.com
+            </a>
+          </div>
+        </div>
+
+        <div class="border-t border-[#A77B55] mt-10 pt-6 text-center">
+          <p class="text-sm text-[#E8C9B8]">
+            © 2026 Pink Courtyard. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
